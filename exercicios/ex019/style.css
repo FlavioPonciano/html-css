@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* em HTML id = #
+   em HTML class = .
+*/
+
+body {
+    background: rgb(153, 224, 153);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(7, 112, 7);
+}
+
+ /*posso colocar o nome do elemento antes h1#princpal mas só se precisar por algum motivo*/
+#principal{
+    text-align: center;
+    background: rgb(7, 112, 7);
+    color: white;
+}
+
+h2 {
+    color:rgb(14, 173, 14);
+}
+
+.basico{
+    color: rgb(80, 163, 63);
+}
+
+.intermediario{
+    color: rgb(163, 161, 63);
+}
+
+.avancado {
+    color: rgb(163, 75, 63);
+}
+
+.destaque {
+    background: rgba(231, 228, 26, 0.603);
+}
+
+/*Posso colocar ID e Class em uma mesma tag, colocar duas classes sendo o ID que mantém as suas configurações.*/

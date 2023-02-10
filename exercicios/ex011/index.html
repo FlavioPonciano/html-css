@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumento e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"><!--Colocar o tamanho menor antes do tamanho menor nas linha de código, sempre deixar o min e o mex com 50px acima para deixar uma folga e colocar o tipo do arquivo no type"image/tipovaiaqui" também trocar o min-width por max-width segundo o Guanabara é melhor, seguindo a ordem do menor para o maior conforme o código-->
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+        <!--Dá pra gerar várias versões de uma mesma imagem, posso usar max-height também-->
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/dove-love.mp3" controls autoplay></audio>
+    <!--MP3 WAV OGG são alguns dos formatos que tem compatibilidade-->
+    <!--Segundo modo de adicionar audio-->
+    <audio preload="auto" autoplay controls loop><!--preload auto ou vazio precisa carregar todo o audio para depois tocar, metadata ele carrega só o nome do arquivo e alguns infos e none ele só carrega se o usuario dar play
+    loop reinicia a música-->
+        <!--Adicionando vários formatos de acordo com o arquivo para tocar-->
+        <source src="midia/emotional-mess.mp3" type="audio/mpeg">
+        <source src="midia/dove-love.ogg" type="audio/ogg">
+        <source src="midia/emotional-mess.wav" type="audio/wav"> <!--Geralmente arquivo wav são mais pesados que os outros-->
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio. <a href="midia/emotional-mess.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+
+    </audio>
+</body>
+</html>

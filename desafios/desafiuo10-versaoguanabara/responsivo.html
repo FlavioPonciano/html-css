@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body {
+            background: gray;
+        }
+
+        main {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px; /*geralmente celulares mais antigos tem essa resolução 320px de largura em pixel quando estão em pé*/
+            max-width: 800px; /*min-width e max-width dão o minimo e o maximo de largura e se movimentando de acordo com a resolução do navegador*/
+            margin: auto;
+        }
+
+        img {
+            width: 100%; /*a imagem vai se ajustar e manter o tamanho em 100% do bloco dela*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia error in, velit eveniet minus animi eius dolor consectetur autem magni accusantium, consequuntur ipsum ullam, libero nam sed soluta! Quia, eum!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi mollitia debitis, ut nobis omnis harum iure repellat ipsum! Ullam aliquam quasi recusandae accusantium debitis. Rem necessitatibus accusamus voluptate magni ducimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum fugit autem nihil modi deserunt, vel aliquam praesentium expedita sapiente illum sit maiores quidem excepturi, atque dolor, sunt ipsum beatae libero.
+        </p>
+        <!--Usando o picture para trocar a imagem quando a resolução fica menor-->
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, maxime. Repellendus at voluptatibus explicabo quam. Molestias, accusantium unde iste omnis incidunt dolorem. Quas facilis eveniet quidem dolorum at ratione totam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi totam nihil commodi fugiat odio necessitatibus quo temporibus assumenda doloremque quae, enim eos animi placeat iure. Soluta harum libero nesciunt maiores! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta harum hic amet, corrupti aspernatur omnis tempore voluptate inventore itaque quia neque sunt ab at qui odit reiciendis delectus facere quasi.
+
+        </p>
+    </main>
+</body>
+</html>

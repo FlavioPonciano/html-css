@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* Seletores Personalizados
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-elemento
+        > = children (elemento filho)
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Configuração normal de link*/
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /*Quando o link já foi visitado*/
+        a:visited {
+            color: darkred;
+        }
+
+        /*Quando passa o mouse por cima*/
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        /*Quando o link for clicado*/
+        a:active {
+            color: yellow
+        }
+
+        .especial:before { /*Toda a classe especial vai ter uma pseudo-classe*/
+            content: '☣';
+        }
+
+        .especial {
+            color: white;
+            background: rgb(230, 80, 80);
+        }
+
+        a::after { /*todo link pseudo-class: e :pseudo-elemento*/
+            content: '[link]';/*Depois de todo link adicionar algo*/
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a class="especial" href="https://youtube.com/cursoemvideo" target="_blank">Canal do YourTube</a></li>
+        <li><a href="https://wwww.cursoemvideo.com" target="_blank">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>
