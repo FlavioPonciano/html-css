@@ -8,13 +8,21 @@
 </head>
 <style>
     body {
-        height: 100vh;
+        /*height: 100vh;
         background: black;
         background-image: url('imagens/wallpaper002.jpg');
+        background-attachment: fixed; Scroll não está funcionando 
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-attachment: fixed;
+
+         
+        Shorthand - background
+            color > image > position > repeat > [size] > attachment
+        */
+        background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+        background-size: cover; /*No momento o size não está funcionando no shorthand*/
+
         /* background-size: cover; ELe corta um pouco as bordas da imagem mas tenta mostrar o maximo possível da imagem mas se o conteudo for maior que altura da imagem ele vai quebrar ou repetir de acordo com o background-repeat
         background-size: contain; tenta sempre deixar 100% da imagem na tela
         Posso adicionar valores como 100% 100% ou o valor auto*/
