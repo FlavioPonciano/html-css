@@ -51,6 +51,7 @@ header a:hover {
 section {
     font-family: var(--fonte3);
     padding: 55px;
+    font-size: 1.2;
     
 }
 
@@ -58,11 +59,46 @@ section {
     background: var(--branco);
 }
 
-.fundo-img {
+.fundo-img1 {
     color: var(--branco);
     background-image: url('../imagens/background001.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-position: left center;
+}
+
+.fundo-img2 {
+    color: var(--branco);
+    background-image: url('../imagens/background002.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     background-position: center center;
+}
+
+.fundo-transparente {
+    background: rgba(0, 0, 0, 0.562);
+    padding: 10px;
+    max-width: 190px;
+}
+
+footer {
+    background: var(--preto);
+    color: var(--branco);
+    text-align: center;
+    max-height: 200px;
+    font-family: var(--fonte1);
+    padding: 10px 0px;
+}
+
+footer a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
