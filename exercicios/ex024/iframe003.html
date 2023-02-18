@@ -31,9 +31,15 @@
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum necessitatibus accusantium repellendus dolore, ea itaque officiis vero est aliquam numquam culpa incidunt amet quidem, nihil magni officia unde eveniet? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere, officia qui reiciendis, veniam ducimus deserunt eaque tempora, perspiciatis sint ratione earum eum aliquid. At mollitia, eligendi placeat esse deleniti ab.</p>
 
-    <iframe id="tela" name="frame" src="" frameborder="0">
-        <p>Infelizmente seu navegador não é compatível com isso.</p>
-    </iframe>
+    <!--
+
+        Adicionando uma conteúdo no iframe utilizando srcdoc dentro fica tudo na mesma linha
+        **Utilizar somente aspas simples dentro do srcdoc pois ele já usa aspas duplas
+
+    -->
+        <iframe id="tela" name="frame"  srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, accusamus illum accusantium perferendis saepe ullam optio, labore debitis similique eveniet facilis sed? Velit nobis placeat quidem. Repudiandae nesciunt earum nemo.</p> <img src='imagens/imagem.png' width='200px'>">
+            <p>Infelizmente seu navegador não é compatível com isso.</p>
+        </iframe>
 
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est repellendus repudiandae corrupti libero et sed dicta molestiae rem mollitia corporis, unde provident omnis distinctio in atque fugiat, consequatur numquam aspernatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quas temporibus in ipsam porro id nobis sit! Laborum maiores, quibusdam porro quas architecto voluptates, similique tempore error atque, esse eum!</p>
 </body>
