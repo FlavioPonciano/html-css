@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quisquam iure labore mollitia ratione, esse voluptatem nihil repudiandae accusantium similique exercitationem! Natus tempora consectetur deserunt tempore sed sequi reiciendis dicta.</p>
+
+    <!--
+        Utilizar o atributo sandbox="sandbox" não deixa o site capturar informações dentro do iframe
+
+        sandbox="allow-same-origin allow-forms allow-scripts" posso usar para páginas internas, por exemplos, nessa configuração para esse iframe coisas da mesma origem, formulários e scripts, o restante segue em proteção
+
+        referrerpolicy="no-referrer" - diz aqui que o que está dentro do iframe não vai coletar nenhuma informação do usuário
+    -->
+    <iframe src="paginas-extras/pag004.html" frameborder="0" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer"> 
+        Seu navegador não é compatível
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit officia odit quis voluptate delectus, perspiciatis molestiae necessitatibus quae et impedit. Natus accusamus repellendus autem consectetur iure hic commodi magnam vero?</p>
+</body>
+</html>
