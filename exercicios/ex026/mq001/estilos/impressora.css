@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*Estilo para impressoras*/
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+/*Caso não queira que apareça algum conteúdo só utilizar o display:none; que por exemplo não vai aparecer na impressão*/
+menu {
+    display: none;
+}
+
+/*mesmo deixando o tamanho do texto delimitado na tela, posso deixar ele com tamanho de 100% ou outro tamanho na impressão*/
+article {
+    width: 100%;
+    text-align: justify;
+}
+
+/*Caso eu queira adicionar algum conteúdo posso utilizar content, o ::after é para dizer que é depois da tag after*/
+article::after {
+    content: 'Esse artigo foi impresso através do site noticias.com';
+}
