@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/* no caso sendo de 768px pra cima */
+@media screen and (min-width: 768px) {
+    #burguer { /*bloqueando o hamburguer para dispositivos maiores*/
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block; /*mantendo o menu inline para ele não ficar em cascata*/
+    }
+
+    main {
+        width: 600px;
+    }
+}
